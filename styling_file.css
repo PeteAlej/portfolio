@@ -1,0 +1,46 @@
+img.profile {                   /* Este es un comentario en CSS */
+    width: 200px;       /* Tamaño de la imágen */
+    border-radius: 50px; /* Rounder corners de la imágen */
+    text-align: center;        /* Ubicación de la imágen con respecto a los siguientes elementos */
+    margin-right: 10px; /* Separación o "padding" de la imágen con el resto de los elementos */
+}
+p.username {
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Add a black background color to the top navigation */
+div.topnav {
+    background-color: #333;
+    /* Overflow se refiere a la habilidad del objeto de desplegar la información que podría hacerse clip por razones como t
+    tamaño muy grande a comparación del bloque o algo así. */
+    overflow: hidden; /*hidden establece se va a hacer clip la info que no quepa dentro del bloque.*/
+    text-align: center;
+    border-radius: 10px;
+}
+  
+  /* Style the links inside the navigation bar */
+div.topnav a {
+    /*float: left;*/
+    color: #f2f2f2;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  /* Change the color of links on hover */
+div.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Add a color to the active/current link */
+div.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
