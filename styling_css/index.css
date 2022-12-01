@@ -11,36 +11,47 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+body {
+    font-family: "Lucida", monospace;
+}
 
 /* Add a black background color to the top navigation */
-div.topnav {
+.sidenav {
     background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
     /* Overflow se refiere a la habilidad del objeto de desplegar la información que podría hacerse clip por razones como t
     tamaño muy grande a comparación del bloque o algo así. */
-    overflow: hidden; /*hidden establece se va a hacer clip la info que no quepa dentro del bloque.*/
-    text-align: center;
-    border-radius: 10px;
+    overflow-x: hidden; /*hidden establece se va a hacer clip la info que no quepa dentro del bloque.*/
+    /*text-align: center;*/
+    height: 100%;
+    width: 230px;
+    padding-top: 40px;
+    /*padding-left: 6px;
+    padding-right: 6px;*/
+    /*border-radius: 10px;*/
 }
-  
-  /* Style the links inside the navigation bar */
-div.topnav a {
-    /*float: left;*/
+.sidenav a {
     color: #f2f2f2;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 16px;
+    /*padding-left: 10px;*/
+    padding: 10px;
+    font-size: 20px;
+    display: block;
     text-decoration: none;
-    font-size: 17px;
 }
-  
-  /* Change the color of links on hover */
-div.topnav a:hover {
+
+.sidenav a:hover {
     background-color: #ddd;
     color: black;
 }
-  
-  /* Add a color to the active/current link */
-div.topnav a.active {
+
+.sidenav a.active {
     background-color: #04AA6D;
-    color: white;
+    color: black;
+}
+
+.body-text {
+    padding-left: 230px;
 }

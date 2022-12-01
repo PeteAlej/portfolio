@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="background-color:#E5C97D" lang="en">
+    <head>
+        <!-- Esto es un comentario en HTML -->
+        <!-- Esta sección del head por lo general es requerido para evitar problemas al generar la página -->
+        <!-- La sección del "link" es necesaria para separar el documento de .css e incluirlo en el HTML -->
+        <link rel='stylesheet' type='text/css' href='styling_css\univ_projects.css' />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="...">
+        <title>
+            My Projects
+        </title> <!-- Dependiendo de dónde se ubique el comentario, puede que se haga así o como en CSS -->
+    </head>
+    <body>
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a class="active" href="#">University Projects</a>
+            <a href="personal_projects.html">Personal Projects</a>
+        </div>
+        <div class="body-text">
+            <div class="introduction">
+                <h1>University Projects</h1>
+            </div>
+            <p>This is a repository of the projects I worked on during my university career. Most of these are more associated to
+                microcontroller programming than software programming, as my career was in Mechatronic Engineering.
+            </p>
+        </div>
+        <div class="project_cards">
+            <a class="project_cards_links" href="index.html">
+                <div class="grad_project_card">
+                    <img class="thumbnail1" src="images\conexion_mando.jpg" alt="Image not found" />
+                    <h2 class="smart_steppers"> Smart stepper motor controller system</h2>
+                    <p class="card_desc">
+                        This is a system that makes use of several microcontrollers in serial connection where a master microcontroller
+                        sends commands and the desired microcontroller within the chain executes said command. For this, a Serial UART 
+                        communication protocol was used.
+                    </p>
+                </div>
+            </a>
+            <a class="project_cards_links" href="index.html">
+                <div class="digital_clock_card">
+                    <img class="thumbnail2" src="images\reloj_digital.png" alt="Image not found" />
+                    <h2 class="digital_clock"> Digital clock using PIC16F887</h2>
+                    <p class="card_desc">
+                        A digital clock was designed using a PIC16F887 microcontroller and Assembly language in the MPLAB development 
+                        environment. The clock has 3 modes: a digital clock, a calendar (with day and month) and an alarm.
+                    </p>
+                </div>
+            </a>
+        </div> 
+    </body>
+</html>
